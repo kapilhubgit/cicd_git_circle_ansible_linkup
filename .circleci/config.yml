@@ -21,8 +21,9 @@ jobs:
             apk add --update ansible 
       - run:
           name: Configure server
-          command: |
-            ansible-playbook -i inventory.txt main-remote.yml
+          command: | 
+            echo kapil
+            #ansible-playbook -i inventory.txt main-remote.yml
 # Sequential workflow
 workflows:
   # Name the workflow
