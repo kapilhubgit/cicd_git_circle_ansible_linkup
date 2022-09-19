@@ -33,12 +33,12 @@ jobs:
           name: Configure server
           command: | 
             echo kapil
-            #ansible-playbook -i inventory.txt main-remote.yml
+            ansible-playbook -i inventory.txt main-remote.yml
 # Sequential workflow
 workflows:
   # Name the workflow
   myWorkflow:
     jobs:
-      - print_greetings
+      #- print_greetings
       - configure_infrastructure
       #- myjob2
